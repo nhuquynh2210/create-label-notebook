@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+@media print {
+  tr.vendorListHeading {
+    background-color: #1a4567 !important;
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+@media print {
+  .vendorListHeading th {
+    color: white !important;
+  }
+}

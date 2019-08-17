@@ -20,8 +20,8 @@ class App extends Component {
 
   createList = () => {
     const { school, subjects, studens, year, classOfSchool } = this.state;
-    const subjectList = subjects.replace(' ', '').split(',');
-    const studentList = studens.replace(' ', '').split(',');
+    const subjectList = subjects.replace(', ', ',').split(',');
+    const studentList = studens.replace(', ', ',').split(',');
     let arr = [];
     for (let i = 0; i < subjectList.length; i++) {
       for (let j = 0; j < studentList.length; j++) {

@@ -8,7 +8,7 @@
     "react-dom": "^16.9.0",
     "react-scripts": "0.9.5"
   },
-  "homepage": "https://nhuquynh2210.github.io//create-label-notebook/",
+  "homepage": "https://nhuquynh2210.github.io/create-label-notebook/",
   "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",

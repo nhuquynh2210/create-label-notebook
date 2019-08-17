@@ -42,8 +42,8 @@ export default class NhanVo extends Component {
             }}
           />
           <div style={{}}>
-            <Field text={nhanvo.subject} />
-            <Field text={nhanvo.classOfSchool} />
+            <Field text={`Môn học: ${nhanvo.subject}`} />
+            <Field text={` Lớp: ${nhanvo.classOfSchool}`} />
             <Field text={`Họ Và Tên: ${nhanvo.name}`} />
             <Field text={`Năm học: ${nhanvo.year}`} />
           </div>

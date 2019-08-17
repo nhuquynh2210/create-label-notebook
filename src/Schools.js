@@ -9,7 +9,7 @@ export default class Schools extends Component {
           fontSize: 15,
           textAlign: 'center',
           fontWeight: 'bold',
-          marginTop: '8px'
+          marginTop: '6px'
         }}
       >
         {school.toUpperCase()}

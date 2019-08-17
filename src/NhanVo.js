@@ -5,10 +5,11 @@ import NhanVoImg from './vien-nhan.png';
 import LineImg from './line.png';
 export default class NhanVo extends Component {
   render() {
+    const { nhanvo } = this.props;
     return (
       <div
         style={{
-          width: '8cm',
+          width: '9cm',
           height: '4cm',
           // borderWidth: '1px',
           borderColor: 'black',
@@ -18,7 +19,7 @@ export default class NhanVo extends Component {
           position: 'relative'
         }}
       >
-        <img src={NhanVoImg} style={{ width: '8cm', height: '4cm' }} />
+        <img src={NhanVoImg} style={{ width: '9cm', height: '4cm' }} />
         <div
           style={{
             position: 'absolute',
@@ -31,7 +32,7 @@ export default class NhanVo extends Component {
             alignItems: 'center'
           }}
         >
-          <Schools />
+          <Schools school={nhanvo.school} />
           <img
             src={LineImg}
             style={{
@@ -41,10 +42,10 @@ export default class NhanVo extends Component {
             }}
           />
           <div style={{}}>
-            <Field text="Vở chính tả" />
-            <Field text="Lớp 1/2" />
-            <Field text="Họ Và Tên: Lê Viết Tâm Phúc" />
-            <Field text="Năm học: 2018 - 2019" />
+            <Field text={nhanvo.subject} />
+            <Field text={nhanvo.classOfSchool} />
+            <Field text={`Họ Và Tên: ${nhanvo.name}`} />
+            <Field text={`Năm học: ${nhanvo.year}`} />
           </div>
         </div>
       </div>

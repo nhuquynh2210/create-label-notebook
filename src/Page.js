@@ -4,7 +4,7 @@ import NhanVo from './NhanVo';
 
 class Page extends Component {
   render() {
-    const { danhSachNhanVo } = this.props;
+    const { danhSachNhanVo, school } = this.props;
     return (
       <div
         style={{
@@ -12,18 +12,25 @@ class Page extends Component {
           height: '29.7cm',
           // borderWidth: '1px',
           borderColor: 'black',
-          border: 'solid',
+          // border: 'solid',
           overflow: 'hidden',
-          marginBottom: '2cm',
-          paddingRight: '40px',
-          paddingLeft: '40px'
+          marginTop: '2cm',
+          paddingTop: '3cm',
+          // marginBottom: '2cm',
+          paddingBottom: '0.7cm',
+
+          paddingLeft: '2cm',
+          paddingRight: '2cm'
         }}
       >
-        {danhSachNhanVo.map((nhanvo, index) => (
-          <div style={{ float: index % 2 === 0 ? 'left' : 'right' }}>
-            <NhanVo />
-          </div>
-        ))}
+        {danhSachNhanVo.map((nhanvo, index) => {
+          
+          return (
+            <div style={{ float: index % 2 === 0 ? 'left' : 'right' }}>
+              <NhanVo nhanvo={nhanvo} />
+            </div>
+          );
+        })}
       </div>
     );
   }

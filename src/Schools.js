@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 export default class Schools extends Component {
   render() {
+    const { school } = this.props;
     return (
       <div
         style={{
@@ -11,7 +12,7 @@ export default class Schools extends Component {
           marginTop: '8px'
         }}
       >
-        {'Trường Tiều học thủy dương'.toUpperCase()}
+        {school.toUpperCase()}
       </div>
     );
   }

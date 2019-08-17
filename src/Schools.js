@@ -6,7 +6,7 @@ export default class Schools extends Component {
     return (
       <div
         style={{
-          fontSize: 14,
+          fontSize: 15,
           textAlign: 'center',
           fontWeight: 'bold',
           marginTop: '8px'

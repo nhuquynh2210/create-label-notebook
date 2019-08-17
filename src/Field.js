@@ -9,7 +9,7 @@ export default class Field extends Component {
           marginTop: '8px',
           textAlign: 'center',
           fontWeight: '600',
-          fontSize: 14
+          fontSize: 15
         }}
       >
         <span>{text}</span>

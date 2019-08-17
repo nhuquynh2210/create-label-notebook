@@ -20,8 +20,8 @@ class App extends Component {
 
   createList = () => {
     const { school, subjects, studens, year, classOfSchool } = this.state;
-    const subjectList = subjects.split(', ');
-    const studentList = studens.split(', ');
+    const subjectList = subjects.replace(' ', '').split(',');
+    const studentList = studens.replace(' ', '').split(',');
     let arr = [];
     for (let i = 0; i < subjectList.length; i++) {
       for (let j = 0; j < studentList.length; j++) {
@@ -38,7 +38,6 @@ class App extends Component {
   };
 
   render() {
-    
     const { showPage } = this.state;
     return <div>{showPage ? this.renderPage() : this.renderForm()}</div>;
   }
@@ -46,7 +45,6 @@ class App extends Component {
   renderPage = () => {
     const list = this.createList();
     const splitList = getList2D(list);
-    
 
     const { school, subjects, studens, year, classOfSchool } = this.state;
     return (

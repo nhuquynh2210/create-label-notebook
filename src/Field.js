@@ -6,7 +6,7 @@ export default class Field extends Component {
     return (
       <div
         style={{
-          marginTop: '8px',
+          marginTop: '7px',
           textAlign: 'center',
           fontWeight: '600',
           fontSize: 15
